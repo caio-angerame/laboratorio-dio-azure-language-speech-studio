@@ -47,3 +47,28 @@ O Azure Language Studio é uma plataforma online da Microsoft que permite explor
 Aqui serão documentados os passos feitos dentro da plataforma e os resultados obtidos quando utilizadas certas funcionalidades do Language Studio
 
 Foram feitos testes voltados as funções de Análise de sentimento e opinião e Detecção de idioma. O teste de Análise de sentimento retornam resultados satisfatórios, onde, a partir de um texto, o Language Studio conseguiu retornar o resultado com ótima precisão, analisando bem aquilo que o redator da mensagem gostaria de passar. Na detecçãp de idioma, o resultado também é bem próximo do esperado, porém quando se trata de mais de um idioma na mesma mensagem, a detecção capta apenas o idioma predominante, ou seja, ignora os demais idiomas ali presentes. Abaixo seguem imagens referenciando os resultados dos testes.
+
+<img src = "images/Teste1LanguageStudio.png">
+
+Neste primeiro teste, é enviada uma mensagem que simula um email, que se refere ao estado do desenvolvimento do software e o desempenho da equipe. A mensagem, a primeira vista, revela que o desenvolvimento corre bem, por mais que a equipe tenha enfrentado turbulências, conquistando assim resultados sub-ótimos.
+
+<img src = "images/Teste1ResultadoLanguageStudio.png">
+
+Este é o resultado que o Language Studio nos retorna, que por sua vez, separou em frases e analisou cada uma, conferindo uma média ao final, sendo parte da mensagem neutra, positiva ou negativa. O resultado foi plenamente como o esperado, pegando palavras-chave e as conferindo tons de negatividade ou positividade, como também analisando o sujeito a qual cada uma se referia.
+
+Partindo para a função de detecção de idiomas, foi feita a análise de três mensagens distintas.
+
+<img src = "images/Teste2LanguageStudio.png">
+
+### Esta é a mensagem em português
+
+--------------------------------------------------------------------------------------------------------
+<img src = "images/Teste3LanguageStudio.png">
+
+### Esta é a mesma mensagem, porém em inglês.
+--------------------------------------------------------------------------------------------------------
+<img src = "images/Teste4LanguageStudio.png">
+
+### Esta mensagem difere das outras, onde se pode notar a presença de três idiomas distintos: Português, Inglês e Japonês.
+-----------------------------------------------------------------------------------------------------------
+O Language Studio apresenta resultados perfeitos nos dois primeiros testes, e no terceiro ele retorna apenas o idioma predominante, sendo este o português, que possui as frases "Este é um texto simples redigido em português" e "Olá, meu nome é Caio".
